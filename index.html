@@ -20,6 +20,8 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css'>
     <!-- Font Awesome Pro 5.11.2 CSS -->
     <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Theme CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -29,11 +31,72 @@
 <body>
     <!-- partial:index.partial.html -->
     <div class="slider">
-        <div class="slide">
-            <h1>Home</h1>
+        <div class="slide home-sec">
+            <div class="home-content">
+                <div class="logo-parallax">
+                    <img src="images/dnezel/d.svg" class="d wow rollIn">
+                    <img src="images/dnezel/n.svg" class="n wow bounceInDown">
+                    <img src="images/dnezel/e.svg" class="e wow lightSpeedIn">
+                    <img src="images/dnezel/z.svg" class="z wow bounceInUp">
+                    <img src="images/dnezel/e.svg" class="e wow flipInX">
+                    <img src="images/dnezel/l.svg" class="l wow fadeIn">
+                </div>
+                <h2><span class="animate-typing wow flipInX" data-animate-loop="true" data-type-speed="200" data-type-delay="100"
+                        data-remove-speed="30" data-remove-delay="900" data-cursor-speed="900">
+                        We Believed in Quality not Qunaitiy
+                    </span></h2>
+            </div>
+            <!--  -->
+            <div class="design-gallery-block">
+                <div class="uk-child-width-1-4@s uk-child-width-1-6@m" uk-grid="masonry: true">
+                    <div class="gallery-block-item"><img src="images/1.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/5.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/6.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/2.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/3.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/4.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/5.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/6.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/7.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/7.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/2.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/3.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/4.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/10.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/8.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/9.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/10.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/11.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/8.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/9.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/11.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/1.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/1.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/5.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/6.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/2.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/3.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/4.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/5.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/6.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/7.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/7.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/2.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/3.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/4.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/10.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/8.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/9.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/10.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/11.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/8.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/9.jpg" alt=""></div>
+                    <div class="gallery-block-item"><img src="images/11.jpg" alt=""></div>
+                </div>
+            </div>
         </div>
         <div class="slide">
-            <h1>Why Us</h1>
+            <!-- <h1>Why Us</h1> -->
         </div>
         <div class="slide">
             <h1>What We Offer?</h1>
@@ -72,6 +135,10 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
     <!-- Mouse Wheel 3.1.13 JS CDN -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Animate Typing JS -->
+    <script src="js/jquery.animateTyping.min.js"></script>
     <!-- Theme JS -->
     <script src="js/app.js"></script>
 </body>

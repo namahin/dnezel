@@ -1,3 +1,6 @@
+// wow js active
+new WOW().init();
+
 const $slider = $('.slider');
 
 $slider.slick({
@@ -8,7 +11,6 @@ $slider.slick({
   speed: 1200,
   cssEase: 'cubic-bezier(0.86, 0, 0.07, 1)'
 });
-
 
 $slider.mousewheel(function (e) {
   e.preventDefault();
@@ -29,3 +31,20 @@ $slider.mousewheel(function (e) {
     $(this).slick('slickPrev');
   }
 });
+
+// logo parallax
+var viewport = $(window),
+  root = $('html'),
+  maxScroll;
+
+viewport.on({
+  scroll: function () {
+    var scrolled = viewport.scrollTop();
+    root.css({
+      fontSize: (scrolled / maxScroll) * 50
+    });
+  },
+  resize: function () {
+    maxScroll = root.height() - viewport.height();
+  }
+}).trigger('resize');

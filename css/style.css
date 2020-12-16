@@ -36,12 +36,12 @@ body {
 }
 
 .slick-vertical .slick-slide {
-  background-color: #1CB0F6;
+  /* background-color: #1CB0F6; */
   border: none;
 }
 
 .slick-vertical .slick-slide:nth-of-type(even) {
-  background-color: #5A6D86;
+  /* background-color: #5A6D86; */
 }
 
 .slick-dots {
@@ -55,6 +55,122 @@ body {
 
 .slick-dots li.slick-active button:before,
 .slick-dots li button:before {
-  color: white;
+  color: #1CB0F6;
   font-size: 12px;
+}
+
+.slick-dots li button:before {
+  color: #5A6D86;
+  font-size: 12px;
+}
+
+
+/* ////////////////////////////////////////////////// */
+.home-sec {
+  overflow: hidden;
+}
+
+.home-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 650px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.home-content h2 {
+  color: #5A6D86;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.home-content h2 span {
+  background-color: #fff;
+  padding: 0 6px;
+}
+
+.design-gallery-block {}
+
+.design-gallery-block .uk-grid {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.gallery-block-item {
+  margin: 0 !important;
+  padding: 0px !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-block-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #00000034;
+  z-index: 1;
+  transition: linear .5s;
+}
+
+.gallery-block-item:hover::before {
+  content: none;
+  transition: linear .5s;
+}
+
+.gallery-block-item img {
+  position: relative;
+  transform: scale(1);
+  transition: linear .5s;
+}
+
+.gallery-block-item img:hover {
+  z-index: 1;
+  transform: scale(1.2);
+  transition: linear .5s;
+}
+
+/* ////////////////////////////////////////////////// */
+.logo-parallax {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.logo-parallax img {
+  padding: 5px;
+  transform: scale(1);
+  transition: linear .2s;
+}
+.logo-parallax img:hover {
+  transform: scale(1.1);
+  transition: linear .2s;
+}
+
+.logo-parallax .d {
+  height: 165px;
+}
+
+.logo-parallax .n {
+  height: 110px;
+}
+
+.logo-parallax .e {
+  height: 110px;
+}
+
+.logo-parallax .z {
+  height: 110px;
+}
+
+.logo-parallax .l {
+  height: 165px;
 }
